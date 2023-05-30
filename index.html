@@ -14,13 +14,13 @@
 
  <div class="text-capitalize w-75 m-auto mt-5">
 
-  <label for="productName" >product Name <span class="text-danger">*</span></label>
+  <label for="productName" >task name <span class="text-danger">*</span></label>
   <input type="text" class="form-control mb-3" id="productName" required>
  
-  <label for="productPrice" >product Price <span class="text-danger">*</span></label>
-  <input type="number" class="form-control mb-3" id="productPrice" required>
+  <label for="productPrice" >priority <span class="text-danger">*</span></label>
+  <input type="number" class="form-control mb-3" id="productPrice" required placeholder="Priority" oninput="validity.valid||(value='')";>
 
-  <label for="productType" >product category <span class="text-danger">*</span></label>
+  <label for="productType" >sort <span class="text-danger">*</span></label>
   <input type="text" class="form-control mb-3" id="productType" required>
 
   <label for="productDesc"> Description</label>
