@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Todo List</title>
+ <link rel="stylesheet" href="Css/all.min.css">
+ <link rel="stylesheet" href="Css/bootstrap.min.css">
+ <link rel="stylesheet" href="Css/normalize.css">
+ <link rel="stylesheet" href="Css/index.css">
+</head>
+<body>
+
+ <div class="text-capitalize w-75 m-auto mt-5">
+
+  <label for="productName" >product Name <span class="text-danger">*</span></label>
+  <input type="text" class="form-control mb-3" id="productName" required>
+ 
+  <label for="productPrice" >product Price <span class="text-danger">*</span></label>
+  <input type="number" class="form-control mb-3" id="productPrice" required>
+
+  <label for="productType" >product category <span class="text-danger">*</span></label>
+  <input type="text" class="form-control mb-3" id="productType" required>
+
+  <label for="productDesc"> Description</label>
+  <textarea  class="form-control mb-3" id="productDesc"></textarea>
+
+ <button class="btn btn-info my-4 px-5 fw-bold" id="addBtn">Add</button>
+
+ <input type="text" id="searchTxt" 
+ onkeyup="search(this)"
+ class="form-control mb-3 w-50 ms-auto">
+
+   <table class="table table-striped text-center text-capitalize">
+    <thead>
+     <th>product Name</th>
+     <th>product Price</th>
+     <th>Type</th>
+     <th> Description</th>
+     <th></th>
+     <th></th>
+    </thead>
+    <tbody id="tBody">
+    </tbody>
+   </table>
+ </div>
+
+
+ <script src="JS/index.js"></script>
+ <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
